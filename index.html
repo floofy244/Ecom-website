@@ -17,13 +17,14 @@
                     <a href="">PhotoFluent.</a>
                 </div>
                 <nav>
-                    <ul>
+                    <ul id="menuItems">
                         <li><a href="">Home</a></li>
                         <li><a href="">Products</a></li>
                         <li><a href="">Cart</a></li>
                     </ul>
                 </nav>
                 <img src="images/cart.png" width="30px" height="30px">
+                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
             </div>
             <div class="row">
                 <div class="col-2">
@@ -66,31 +67,16 @@
             <div class="row">
                 <div class="col-2"><img src="images/exclusive.JPG" class="offer-image"></div>
                 <div class="col-2">
+                    <h1>Mountains</h1>
                     <p>Exclusively available on PhotoFluent.</p>
                     <p>The vast landscape of the Trikuta Mountain range.</p>
-                    <h1>Mountains</h1>
                     <a href="" class="btn">Order Now</a>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="brands">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <img src="images/800px-Adobe_Photoshop_CC_icon.svg.png">
-            </div>
-            <div class="col-3">
-                <img src="images/Logo_Blender.svg.png">
-            </div>
-            <div class="col-3">
-                <img src="images/Nikon_Logo.svg.png">
-            </div>
-        </div>
-    </div>
-</div>
-
+    
 <footer>
     <ul class="social">
         <li><a href="https://www.instagram.com/_.photofluent._/" target="_blank"><i class="fa fa-instagram"></i></a></li>
@@ -103,5 +89,18 @@
     <p>&copy;AviralMalik</p>
 </footer>
 
+
+<script>
+    var menu = document.getElementById(menuItems);
+    menuItems.style.maxHeight = "0px";
+    function menuToggle()
+    {
+        if(menuItems.style.maxHeight == "0px"){
+            menuItems.style.maxHeight = "200px";
+        }else{
+            menuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
 </body>
 </html>
