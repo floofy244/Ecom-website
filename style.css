@@ -46,6 +46,7 @@ p{
 
 .container {
     max-width: 1300px;
+    height: 100%;
     margin: auto;
     padding-left: 25px;
     padding-right: 25px;
@@ -106,6 +107,7 @@ p{
     min-width: 200px;
     margin-bottom: 50px;
     padding: 10px;
+    transition: transform 0.5s;
 }
 
 .col-4 img{
@@ -129,7 +131,7 @@ p{
 
 .title::after{
     content: '';
-    background: #2c2c2c;
+    background: #c8a8c8;
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -146,4 +148,74 @@ h4{
 
 .col-4 p{
     font-size: 14px;
+}
+
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+.offer{
+    background:radial-gradient(whitesmoke,#c8a8c8);
+    margin-top: 80px;
+    padding: 30px 0;
+}
+
+.col-2 .offer-image{
+    padding: 50px;
+
+}
+
+small{
+    color: #2c2c2c;
+}
+
+.brands{
+    margin: 100px auto;
+}
+
+.col-3{
+    width: 160px;
+}
+
+.col-3 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+
+.col-3 img:hover{
+    filter: grayscale(0);
+}
+
+.social {
+	list-style-type: none;
+	text-align: center;
+
+}
+
+.social li {
+	display: inline;
+
+}
+
+.social i {
+	font-size: 270%;
+	margin: 1% 5% 7% 4%;
+	color: #2c2c2c;
+}
+
+.social i:hover {
+	color: #606060;
+}
+
+footer.second {
+	
+	background-color: #2c2c2c;
+
+}
+
+footer.second p {
+	color: whitesmoke;
+	padding: 5%;
+	text-align: center;
 }
