@@ -4,69 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
     <link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
 	<link href="css/font-awesome.min.css" rel="stylesheet"/>
     <title>Document</title>
 </head>
 <body>
-    <div class="header">
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <a href="index.html">PhotoFluent.</a>
-                </div>
-                <nav>
-                    <ul id="menuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#featured">Products</a></li>
-                        <li><a href="signin.html">Account</a></li>
-                        <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
-                    </ul>
-                </nav>
-                <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
-            </div>
-
-<div class="small-container cart-page">
-    <table>
-        <tr>
-            <th>Product</th>
-            <th>Quantity</th>
-            <th>Subtotal</th>
-        </tr>
-        <tr>
-            <td>
-                <div class="cart-info">
-                    <img src="images/exclusive.JPG" width="20%" height="20%">
-                </div>
-                <div>
-                    <p>Mountains</p>
-                    <small>Price: Rs 1000</small>
-                    <a href="">Remove</a>
-                </div>
-            </td>
-            <td><input type="number" value="1"></td>
-            <td>Rs 400</td>
-        </tr>
-    </table>
-</div>
+  <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html">PhotoFluent.</a>
+        </div>
+        <nav>
+            <ul id="menuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Products</a></li>
+                <li><a href="signin.html">Account</a></li>
+                <li><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+            </ul>
+        </nav>
+        <img src="images/menu.png" class="menu-icon" onclick="menuToggle()">
+    </div>
 
 
 
 
+  <div class="cart">
 
-<footer>
-    <ul class="social">
-        <li><a href="https://www.instagram.com/_.photofluent._/" target="_blank"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="https://twitter.com/AviralMalik20"target="_blank"><i class="fa fa-twitter"></i></a></li>
-        <li><a href="https://www.youtube.com/channel/UCHb2IkOqFKIKaqQ3anhQb8g"target="_blank"><i class="fa fa-youtube"></i></a></li>
-        <li><a href="https://github.com/floofy244"target="_blank"><i class="fa fa-github"></i></a></li>
-    </ul>
-</footer>
-<footer class="second">
-    <p>&copy;AviralMalik</p>
-</footer>
+    <div class="cart_header">
+      <div class="logo-wrapper">
+        <a href="" class="logo">PhotoFluent.</a>
+      </div>
 
+      <div class="header-info">
+        <span class="date">31.12.2021</span>
+        <span class="ref">0f-113</span>
+      </div>
+    </div>
+
+    <div class="subheader-wrapper">
+      <div class="subheader">
+        <h1 class="username">Hello, Peter</h1>
+        <span class="help-text">you've purchased three (3) items From our store:</span>
+      </div>
+    </div>
+
+    <div class="cart">
+      <h2 class="cart-title">Cart:</h2>
+
+      <ul class="cart-list">
+        <li class="cart-item">
+          <span class="item-name">Mountains</span>
+          <span class="item-price">Rs 1000</span>
+        </li>
+
+        <li class="cart-item">
+          <span class="item-name">Neon Abyss</span>
+          <span class="item-price">Rs 400</span>
+        </li>
+
+        <li class="cart-item">
+          <span class="index">Alien Planet</span>
+          <span class="item-name"></span>
+          <span class="item-price">rs 400</span>
+        </li>
+
+        <li class="cart-item">
+          <span class="cart-total">Total</span>
+          <span class="item-price">Rs 1800</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="cart_footer">
+      <img src="https://i.ibb.co/c8CQvBq/barcode.png" alt="Paypal Barcode" class="barcode">
+    </div>
+  </div>
+
+  
 
 <script>
     var menu = document.getElementById(menuItems);
