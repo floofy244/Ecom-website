@@ -15,6 +15,10 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    z-index: 99;
+    position: sticky;
+    top: 0;
+    background: #c8a8c8;
 }
 
 .logo{
@@ -240,7 +244,7 @@ p{
 .barcode {
   display: block;
   margin: 0 auto;
-  max-width: 300px;
+  max-width: 150px;
   height: auto;
 }
 .cart{
@@ -264,6 +268,7 @@ p{
         width: 100%;
         background: #2c2c2c;
         overflow: hidden;
+        z-index: 1000;
         transition: max-height 0.5s;
     }
 

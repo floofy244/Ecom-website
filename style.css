@@ -13,6 +13,10 @@ body {
     display: flex;
     align-items: center;
     padding: 20px;
+    background: #c8a8c8;
+    position: sticky;
+    top: 0;
+    z-index: 99;
 }
 
 .logo{
@@ -98,12 +102,12 @@ p{
 }
 
 .header{
-    background: linear-gradient(#c8a8c8,white);
+    background: linear-gradient(white 5%,#c8a8c8 30%,white);
 	
 }
 
 
-.header .row{
+.row{
     margin-top: 70px;
 }
 
